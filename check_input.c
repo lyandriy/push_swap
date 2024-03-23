@@ -6,7 +6,7 @@
 /*   By: lyandriy <lyandriy@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/30 17:35:37 by lyandriy          #+#    #+#             */
-/*   Updated: 2023/01/07 18:39:12 by lyandriy         ###   ########.fr       */
+/*   Updated: 2023/01/17 20:52:57 by lyandriy         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -48,19 +48,20 @@ int	ft_check_input(const char *str)
 	while (str[pos] != '\0')
 	{
 		if (str[pos] > 47 && str[pos] < 58)
+		{
 			pos++;
+			if (str[pos] == '-' || str[pos] == '+')
+				return (1);
+		}
 		else if (str[pos] == '+' || str[pos] == '-')
 		{
-			if (str[pos - 1] != 32 && (str[pos - 1] < 8 || str[pos - 1] > 14))
-			{
-				if (!(str[pos + 1] > 47 && str[pos + 1] < 58))
-					return (1);
-			}
-			if (str[pos - 1] == '+' || str[pos - 1] == '-')
-				return (1);
 			pos++;
+			if (!(str[pos] > 47 && str[pos] < 58))
+				return (1);
+			if (str[pos] == '+' || str[pos] == '-')
+				return (1);
 		}
-		else if (str[pos] == 32 || (str[pos] > 8 && str[pos] < 14))
+		else if (str[pos] == 32)
 			pos++;
 		else
 			return (1);

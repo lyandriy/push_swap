@@ -6,7 +6,7 @@
 /*   By: lyandriy <lyandriy@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/03 12:53:29 by lyandriy          #+#    #+#             */
-/*   Updated: 2023/01/07 16:26:44 by lyandriy         ###   ########.fr       */
+/*   Updated: 2023/01/14 17:39:57 by lyandriy         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -67,7 +67,7 @@ void	ft_sort_five(t_list **stack_a, int size_stack)
 	{
 		ft_move_smallest_number(stack_a, ft_find_smallest_num(stack_a[0]));
 		ft_push_stack(stack_a, &stack_b, 'b');
-		ft_sort_two(stack_a);
+		ft_sort_three(stack_a);
 		ft_push_stack(&stack_b, stack_a, 'a');
 	}
 }

@@ -6,7 +6,7 @@
 /*   By: lyandriy <lyandriy@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/30 17:36:20 by lyandriy          #+#    #+#             */
-/*   Updated: 2023/01/07 16:26:11 by lyandriy         ###   ########.fr       */
+/*   Updated: 2023/01/10 22:22:29 by lyandriy         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,6 +27,7 @@ typedef struct s_list
 	struct s_list	*next;
 }					t_list;
 
+void		ft_error(void);
 t_list		*ft_new_nodo(int num);
 t_list		*ft_lstlast(t_list *lst);
 int			ft_count_num(t_list *stack);
