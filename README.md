@@ -61,8 +61,6 @@ To run the `push_swap` program, compile the project using the provided Makefile 
 ```sh
 make
 ./push_swap 3 2 5 1 4
-make
-./push_swap 3 2 5 1 4
 ```
 
 The program will output a sequence of operations, for example:
