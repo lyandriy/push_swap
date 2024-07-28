@@ -64,11 +64,11 @@ make
 ```
 
 The program will output a sequence of operations, for example:
-pb
-pb
-sa
-ra
-pa
-pa
+`pb´
+`pb´
+`sa´
+`ra´
+`pa´
+`pa´
 
 This project provides a practical exercise in implementing and optimizing sorting algorithms, as well as managing and manipulating stack data structures.
